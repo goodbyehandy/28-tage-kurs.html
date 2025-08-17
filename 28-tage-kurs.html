@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🚀📱 Digitale Meisterschaft in 28 Tagen | Goodbye Handy</title>
+    
+    <!-- SEO & Social Media Meta Tags -->
+    <meta name="description" content="In 28 Tagen zur digitalen Meisterschaft! Entwickle echte Kontrolle über dein Smartphone mit dem strukturierten 4-Wochen-Programm.">
+    <meta name="keywords" content="Digitale Meisterschaft, Smartphone Kontrolle, 28 Tage Transformation, Digital Detox, Handysucht überwinden">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.goodbyehandy.de/online-kurse-angebote">
+    <meta property="og:title" content="🚀📱 Digitale Meisterschaft in 28 Tagen - Komplette Smartphone-Transformation!">
+    <meta property="og:description" content="Von impulsivem Griff zum bewussten Nutzer in nur 28 Tagen! 4 aufeinander aufbauende Wochen zur digitalen Meisterschaft.">
+    <meta property="og:image" content="https://www.goodbyehandy.de/images/28-tage-social-hero-1200x630.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="🚀📱 Digitale Meisterschaft in 28 Tagen">
+    <meta property="twitter:description" content="In 28 Tagen zur digitalen Meisterschaft! Entwickle echte Kontrolle über dein Smartphone.">
+    <meta property="twitter:image" content="https://www.goodbyehandy.de/images/28-tage-social-hero-1200x630.jpg">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #0f0f0f;
+            color: #fff;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Logo Styles */
+        .logo {
+            position: absolute;
+            top: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 200px;
+            height: auto;
+            z-index: 10;
+            opacity: 0.9;
+            transition: all 0.3s ease;
+        }
+        
+        .logo:hover {
+            opacity: 1;
+            transform: translateX(-50%) scale(1.05);
+        }
+        
+        @media (max-width: 768px) {
+            .logo {
+                width: 150px;
+                top: 20px;
+            }
+        }
+        
+        /* Hero Section angepasst für Logo-Platz */
+        .hero {
+            padding-top: 120px;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+        }
+        
+        @media (max-width: 768px) {
+            .hero {
+                padding-top: 100px;
+            }
+        }
+        
+        /* Animated Background */
+        .bg-animation {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background: linear-gradient(45deg, #1a1a2e, #16213e, #0f3460);
+            background-size: 400% 400%;
+            animation: gradientShift 15s ease infinite;
+        }
+        
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at 50% 50%, rgba(255,255,255,0.03) 0%, transparent 70%);
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .duration-badge {
+            background: linear-gradient(45deg, #4ecdc4, #45b7d1);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 30px;
+            display: inline-block;
+            animation: pulse 2s infinite;
+            box-shadow: 0 4px 20px rgba(78, 205, 196, 0.3);
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        
+        .hero h1 {
+            font-size: clamp(2.5rem, 6vw, 5rem);
+            font-weight: 900;
+            margin-bottom: 20px;
+            background: linear-gradient(45deg, #4ecdc4, #45b7d1, #667eea);
+            background-size: 300% 300%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: gradientText 3s ease infinite;
+            line-height: 1.1;
+        }
+        
+        @keyframes gradientText {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        
+        .hero .subtitle {
+            font-size: clamp(1.2rem, 3vw, 1.8rem);
+            margin-bottom: 20px;
+            opacity: 0.9;
+            font-weight: 300;
+        }
+        
+        .transformation-stats {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 20px;
+            padding: 30px;
+            margin: 40px 0;
+            text-align: center;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .stat-item {
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 900;
+            color: #4ecdc4;
+            display: block;
+            margin-bottom: 5px;
+        }
+        
+        .stat-label {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+        
+        .cta-section {
+            margin: 50px 0;
+        }
+        
+        .price-container {
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 25px;
+            padding: 40px;
+            margin: 30px 0;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .price-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #4ecdc4, #45b7d1, #667eea);
+        }
+        
+        .price-old {
+            font-size: 1.5rem;
+            text-decoration: line-through;
+            opacity: 0.6;
+            margin-right: 20px;
+        }
+        
+        .price-new {
+            font-size: 3rem;
+            font-weight: 900;
+            color: #4ecdc4;
+            margin-right: 10px;
+        }
+        
+        .savings {
+            background: #27ae60;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            display: inline-block;
+            margin-left: 10px;
+        }
+        
+        .cta-button {
+            background: linear-gradient(45deg, #4ecdc4, #45b7d1);
+            color: white;
+            padding: 25px 50px;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.3rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            box-shadow: 0 15px 35px rgba(78, 205, 196, 0.4);
+            position: relative;
+            overflow: hidden;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .cta-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.5s;
+        }
+        
+        .cta-button:hover::before {
+            left: 100%;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(78, 205, 196, 0.5);
+        }
+        
+        /* Features Grid */
+        .features {
+            padding: 80px 0;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .feature-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 30px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-10px);
+            border-color: rgba(255, 255, 255, 0.3);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+        
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            display: block;
+        }
+        
+        .feature-title {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+        
+        /* Timeline */
+        .timeline {
+            padding: 80px 0;
+        }
+        
+        .weeks-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .week-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 30px;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+        
+        .week-card:hover {
+            transform: translateY(-10px);
+            border-color: rgba(78, 205, 196, 0.5);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+        
+        .week-number {
+            background: linear-gradient(45deg, #4ecdc4, #45b7d1);
+            color: white;
+            padding: 15px;
+            border-radius: 50%;
+            font-weight: 700;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            font-size: 1.2rem;
+        }
+        
+        .week-title {
+            color: #4ecdc4;
+            margin-bottom: 15px;
+            font-size: 1.4rem;
+            font-weight: 700;
+            text-align: center;
+        }
+        
+        .week-description {
+            text-align: center;
+            line-height: 1.6;
+        }
+        
+        /* Benefits Section */
+        .benefits {
+            padding: 80px 0;
+            background: rgba(255, 255, 255, 0.02);
+        }
+        
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .benefit-item {
+            display: flex;
+            align-items: flex-start;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 25px;
+            border-radius: 15px;
+            border-left: 4px solid #4ecdc4;
+        }
+        
+        .benefit-icon {
+            font-size: 2rem;
+            margin-right: 20px;
+            margin-top: 5px;
+        }
+        
+        .benefit-content h3 {
+            color: #4ecdc4;
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+        
+        /* Urgency Section */
+        .urgency {
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            padding: 60px 0;
+            text-align: center;
+            margin: 80px 0;
+            border-radius: 25px;
+        }
+        
+        .urgency h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        
+        .countdown {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin: 20px 0;
+        }
+        
+        /* Mobile Optimizations */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .price-container {
+                padding: 25px;
+            }
+            
+            .cta-button {
+                padding: 20px 40px;
+                font-size: 1.1rem;
+            }
+            
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        /* Floating Elements */
+        .floating-elements {
+            position: fixed;
+            top: 20%;
+            right: -100px;
+            font-size: 2rem;
+            animation: float 6s ease-in-out infinite;
+            z-index: 1;
+            opacity: 0.1;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(5deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-animation"></div>
+    <div class="floating-elements">🚀📱</div>
+    
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <!-- Logo -->
+            <img class="logo" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAwIiBoZWlnaHQ9IjUwMCIgdmlld0JveD0iMCAwIDUwMCA1MDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI1MDAiIGhlaWdodD0iNTAwIiBmaWxsPSJ0cmFuc3BhcmVudCIvPgo8ZyBjbGlwLXBhdGg9InVybCgjY2xpcDBfMV8yKSI+CjxwYXRoIGQ9Ik0yNTAgNDEwQzE5NSA0MTAgMTUwIDM2NSAxNTAgMzEwVjIwMEMxNTAgMTQ1IDE5NSAxMDAgMjUwIDEwMFM0NTAgMTQ1IDQ1MCAyMDBWMzEwQzQ1MCAzNjUgNDA1IDQxMCAzNTAgNDEwSDI1MFoiIGZpbGw9IiMyODM2NDgiLz4KPHBhdGggZD0iTTI1MCA5MEMxODkgOTAgMTQwIDE0MSAxNDAgMjAyVjMwOEMxNDAgMzY5IDE4OSA0MjAgMjUwIDQyMFMzNjAgMzY5IDM2MCAzMDhWMjAyQzM2MCAxNDEgMzExIDkwIDI1MCA5MFoiIGZpbGw9IiM0M0E1NDciLz4KPHBhdGggZD0iTTI1MCA4MEM1MCA4MCAyMCA0MCAyMCAyMDBWMzIwQzIwIDQ4MCA1MCA1MjAgMjUwIDUyMFM0ODAgNDgwIDQ4MCAzMjBWMjAwQzQ4MCA0MCA0NTAgODAgMjUwIDgwWiIgZmlsbD0idXJsKCNncmFkaWVudF8xKSIvPgo8cGF0aCBkPSJNMjUwIDIwMEMzMTEgMjAwIDM2MCAyNDkgMzYwIDMxMFYzNTBDMzYwIDQxMSAzMTEgNDYwIDI1MCA0NjBTMTQwIDQxMSAxNDAgMzUwVjMxMEMxNDAgMjQ5IDE4OSAyMDAgMjUwIDIwMFoiIGZpbGw9IiM3OUNEODkiLz4KPHBhdGggZD0iTTI1MCAyMTBMMTYwIDI2MEwyNTAgMzEwTDM0MCAyNjBMMjUwIDIxMFoiIGZpbGw9IiNGRkZGRkYiLz4KPC9nPgo8ZGVmcz4KPGZ5bHRlcjE+CjxsaW5lYXJHcmFkaWVudCBpZD0iZ3JhZGllbnRfMSIgeDE9IjAuNSIgeTE9IjAiIHgyPSIwLjUiIHkyPSIxIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCI+CjxzdG9wIHN0b3AtY29sb3I9IiM5MzJGRkYiLz4KPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMDMwRkY0Ii8+CjwvbGluZWFyR3JhZGllbnQ+CjxjbGlwUGF0aCBpZD0iY2xpcDBfMV8yIj4KPHJlY3Qgd2lkdGg9IjUwMCIgaGVpZ2h0PSI1MDAiIGZpbGw9IndoaXRlIi8+CjwvY2xpcFBhdGg+CjwvZGVmcz4KPHN0eWxlPgo8IVtDREFUQVsKLyogR09PREJZRSAqLwpAbWVkaWEgKG1heC13aWR0aDogNzY4cHgpIHsKICAgIC5sb2dvIHsKICAgICAgICB3aWR0aDogMTUwcHggIWltcG9ydGFudDsKICAgIH0KfQpdXT4KPHN0eWxlPgo8L3N2Zz4K" alt="Goodbye Handy Sucht Logo">
+            
+            <div class="hero-content">
+                <div class="duration-badge">
+                    🚀 PREMIUM: 28-Tage Intensiv-Transformation
+                </div>
+                
+                <h1>Digitale Meisterschaft in 28 Tagen</h1>
+                
+                <p class="subtitle">
+                    Von impulsivem Griff zum bewussten Nutzer – entwickle echte Kontrolle über dein Smartphone
+                </p>
+                
+                <div class="transformation-stats">
+                    <h3 style="margin-bottom: 20px; color: #4ecdc4;">Deine 28-Tage Transformation:</h3>
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <span class="stat-number">4</span>
+                            <span class="stat-label">Aufbauende Wochen</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">28</span>
+                            <span class="stat-label">Audio-Module</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">6</span>
+                            <span class="stat-label">Monate Zugang</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">15-25</span>
+                            <span class="stat-label">Min. täglich</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="cta-section">
+                    <div class="price-container">
+                        <span class="price-old">Normalpreis: 299€</span>
+                        <span class="price-new">196€</span>
+                        <span class="savings">103€ gespart!</span>
+                        
+                        <p style="margin-top: 20px; font-size: 1.1rem;">
+                            <strong>🎯 28-Tage Intensivprogramm</strong><br>
+                            <strong>🎧 28 Audio-Module</strong><br>
+                            <strong>📋 Umfangreiche Arbeitsblätter</strong><br>
+                            <strong>🔄 6 Monate Plattform-Zugang</strong><br>
+                            <strong>📈 Persönliche Reflexionstools</strong>
+                        </p>
+                    </div>
+                    
+                    <a href="https://sslsites.de/zum-kurs.de?3037&onestep" class="cta-button">
+                        Jetzt digitale Meisterschaft entwickeln!
+                    </a>
+                    
+                    <p style="margin-top: 20px; opacity: 0.8;">
+                        💳 Sichere Zahlung | ✅ Sofortiger Zugang nach Zahlung
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Timeline Section -->
+    <section class="timeline">
+        <div class="container">
+            <h2 style="text-align: center; font-size: 2.5rem; margin-bottom: 30px;">
+                Deine 4-Wochen Reise zur digitalen Meisterschaft
+            </h2>
+            
+            <p style="text-align: center; font-size: 1.2rem; opacity: 0.8; margin-bottom: 50px;">
+                4 aufeinander aufbauende Wochen – von Bewusstsein zur Meisterschaft
+            </p>
+            
+            <div class="weeks-grid">
+                <div class="week-card">
+                    <div class="week-number">W1</div>
+                    <h3 class="week-title">Bewusstsein entwickeln</h3>
+                    <p class="week-description">
+                        Du erkennst deine Smartphone-Gewohnheiten und verstehst die tieferliegenden Trigger. 
+                        Aufbau eines soliden Fundaments für deine Transformation.
+                    </p>
+                </div>
+                
+                <div class="week-card">
+                    <div class="week-number">W2</div>
+                    <h3 class="week-title">Strukturen aufbauen</h3>
+                    <p class="week-description">
+                        Du etablierst neue, gesunde Routinen und lernst praktische Techniken für 
+                        bewusste Smartphone-Nutzung im Alltag.
+                    </p>
+                </div>
+                
+                <div class="week-card">
+                    <div class="week-number">W3</div>
+                    <h3 class="week-title">Kontrolle übernehmen</h3>
+                    <p class="week-description">
+                        Du setzt klare digitale Grenzen und entwickelst Strategien für 
+                        langfristige Verhaltensänderung ohne Rückfälle.
+                    </p>
+                </div>
+                
+                <div class="week-card">
+                    <div class="week-number">W4</div>
+                    <h3 class="week-title">Meisterschaft erreichen</h3>
+                    <p class="week-description">
+                        Du festigst deine neuen Gewohnheiten und entwickelst einen nachhaltigen 
+                        Lebensstil mit intentionaler Technologie-Nutzung.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Benefits Section -->
+    <section class="benefits">
+        <div class="container">
+            <h2 style="text-align: center; font-size: 2.5rem; margin-bottom: 30px;">
+                Was du in 28 Tagen erreichen wirst
+            </h2>
+            
+            <div class="benefits-grid">
+                <div class="benefit-item">
+                    <span class="benefit-icon">🎯</span>
+                    <div class="benefit-content">
+                        <h3>Intentionale Nutzung</h3>
+                        <p>Du entscheidest bewusst und zielgerichtet, wann und wie du dein Smartphone nutzt – keine impulsiven Reaktionen mehr.</p>
+                    </div>
+                </div>
+                
+                <div class="benefit-item">
+                    <span class="benefit-icon">⚡</span>
+                    <div class="benefit-content">
+                        <h3>Strukturierte Selbstreflexion</h3>
+                        <p>Durch 15-25 Minuten täglich entwickelst du ein tiefes Verständnis für deine digitalen Gewohnheiten.</p>
+                    </div>
+                </div>
+                
+                <div class="benefit-item">
+                    <span class="benefit-icon">🔄</span>
+                    <div class="benefit-content">
+                        <h3>Nachhaltige Verhaltensänderung</h3>
+                        <p>Mit bewährten Strategien etablierst du langfristige Veränderungen, die auch nach dem Kurs bestehen bleiben.</p>
+                    </div>
+                </div>
+                
+                <div class="benefit-item">
+                    <span class="benefit-icon">📊</span>
+                    <div class="benefit-content">
+                        <h3>Persönliche Erfolgskontrolle</h3>
+                        <p>Mit digitalen Reflexionstools verfolgst du eigenständig deinen Fortschritt und bleibst motiviert.</p>
+                    </div>
+                </div>
+                
+                <div class="benefit-item">
+                    <span class="benefit-icon">🧠</span>
+                    <div class="benefit-content">
+                        <h3>Tiefe Selbsterkenntnis</h3>
+                        <p>Du verstehst nicht nur deine Handy-Gewohnheiten, sondern entwickelst ein bewusstes Verhältnis zur Technologie.</p>
+                    </div>
+                </div>
+                
+                <div class="benefit-item">
+                    <span class="benefit-icon">🚀</span>
+                    <div class="benefit-content">
+                        <h3>Digitale Meisterschaft</h3>
+                        <p>Nach 28 Tagen bist du Meister über deine Technologie – nicht umgekehrt. Echte
